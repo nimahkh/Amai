@@ -1,4 +1,7 @@
-[build] base = "blog" publish = "public" command = "npm run build"
+[build]
+base = "blog"
+publish = "public"
+command = "npm run build"
 
 [template]
   incoming-hooks = ["Ghost"]
