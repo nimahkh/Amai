@@ -15,4 +15,4 @@ const IndexPage = () => (
     </Layout>
 )
 
-export default NotFoundPage
+export default IndexPage
