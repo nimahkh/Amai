@@ -1,7 +1,6 @@
 [build]
-base = "blog"
-publish = "public"
-command = "npm run build"
+  command = "gatsby build"
+  publish = "public/"
 
 [template]
   incoming-hooks = ["Ghost"]
