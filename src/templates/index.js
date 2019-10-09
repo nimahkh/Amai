@@ -13,9 +13,7 @@ import { MetaData } from '../components/common/meta'
 * in /utils/siteConfig.js under `postsPerPage`.
 *
 */
-<html>
-<header><title>This is title</title></header>
-<body>
-Hello world
-</body>
-</html>
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById('root')
+);
