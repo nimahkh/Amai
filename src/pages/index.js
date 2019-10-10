@@ -4,13 +4,6 @@ import '.components/styles/style.css';
 
 const IndexPage = () => (
   <style>
-  body {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-  }
   /* Slider wrapper*/
   .css-slider-wrapper {
     display: block;
@@ -252,7 +245,6 @@ const IndexPage = () => (
         <a href="http://www.htmllion.com/pure-css-based-fullscreen-slider.html" class="button">Back</a> <a href="#" class="button">Download</a> </div>
     </div>
   </div>
-  </body>
 )
 
 export default IndexPage
