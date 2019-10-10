@@ -76,13 +76,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 </main>
 
             </div>
-
-            <div className="viewport-bottom">
-                {/* The footer at the very bottom of the screen */}
-                <footer className="site-foot">
-                </footer>
-
-            </div>
+            
         </div>
 
     </>
