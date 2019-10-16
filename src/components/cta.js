@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 
 import Button from "../components/button"
 import SectionHeader from "./section-header"
