@@ -6,8 +6,9 @@
  */
 
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
+
 import Footer from "./footer"
 import "../styles/default.css"
 
@@ -17,7 +18,7 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            siteTitle
+            title
           }
         }
       }

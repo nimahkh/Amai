@@ -1,5 +1,4 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
 
 import feature from "../images/feature.png"
 import SectionHeader from "./section-header"
