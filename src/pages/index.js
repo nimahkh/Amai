@@ -38,8 +38,5 @@ const IndexPage = () => (
     background-position: bottom center;
     background-repeat: repeat-y;
     background-size: cover;
-  `
-
-  export default StyledBackgroundSection
 
 export default IndexPage
