@@ -1,15 +1,13 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Hero from "../components/hero"
 
 const IndexPage = () => (
-        <div className="container">
-            <article className="content" style={{ textAlign: `center` }}>
-                <h1 className="content-title">Hello World</h1>
-                <section className="content-body">
-                    Yes you did it
-                </section>
-            </article>
-        </div>
+  <Layout>
+    <SEO />
+    <Hero />
+  </Layout>
 )
 
 export default IndexPage
