@@ -13,10 +13,6 @@ import Footer from "./footer"
 import "../styles/default.css"
 
 const Layout = ({ children }) => (
-  <StaticQuery
-  
-    render={data => (
-      <>
         <div
           style={{
             padding: "0 1rem",
@@ -27,7 +23,6 @@ const Layout = ({ children }) => (
         <Footer siteTitle={data.site.siteMetadata.title} />
       </>
     )}
-  />
 )
 
 Layout.propTypes = {
