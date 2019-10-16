@@ -32,8 +32,7 @@ class Layout extends Component {
     const { isPreloaded } = this.state;
     return (
       <StaticQuery
-        query={graphql`
-        `}
+        query={graphql}
         render={data => (
           <>
             <div
