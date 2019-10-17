@@ -2,10 +2,6 @@ import React from "react";
 import { graphql } from 'gatsby'
 import Cover from "../components/cover";
 import Navigation from "../components/navigation";
-import AboutMe from "../components/about-me";
-import Projects from "../components/projects";
-import Contacts from "../components/contacts";
-import Footer from "../components/footer";
 import { Helmet } from "react-helmet";
 import favicon from "../static/logo/favicon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -24,10 +20,6 @@ const HomePage = ({ data }) => {
       <Cover coverImg={data.coverImg} />
       <div className="container-fluid main">
         <Navigation />
-        <AboutMe profileImg={data.profileImg} hobbyImgs={hobbyImgData} />
-        <Projects projectImgs={projectImgData} />
-        <Contacts />
-        <Footer />
       </div>
     </div>
   );
