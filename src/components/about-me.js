@@ -13,7 +13,6 @@ const AboutMe = ({ profileImg, hobbyImgs }) => {
             <Img
               title="Profile image"
               alt="Large image of Maribel"
-              sizes={profileImg.sizes}
               className="img-responsive center-block"
             />
           </div>

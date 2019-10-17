@@ -62,7 +62,6 @@ class Projects extends Component {
                     <Img
                       title={project.name}
                       alt="Screenshot of Project"
-                      sizes={imageSizes}
                       className="card-img_src center-block"
                     />
                   </div>
