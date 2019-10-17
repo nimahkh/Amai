@@ -14,7 +14,8 @@ class Layout extends React.Component {
         <h1
           style={{
             marginBottom: 0,
-            marginTop: 0,
+            textalign: 'center',
+            marginTop: 10,
           }}
         >
           <Link
