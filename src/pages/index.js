@@ -1,34 +1,94 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import Cover from "../components/cover";
+import Navigation from "../components/navigation";
+import AboutMe from "../components/about-me";
+import Projects from "../components/projects";
+import Contacts from "../components/contacts";
+import Footer from "../components/footer";
+import { Helmet } from "react-helmet";
+import favicon from "../static/logo/favicon.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+import "./index.css";
 
-import Layout from "../components/layout"
-import Button from "../components/button"
+const HomePage = ({ data }) => {
+  const siteTitle = data.site.siteMetadata.title;
+  const metaDescr = data.site.siteMetadata.description;
+  const { edges: projectImgData } = data.ProjectImgs;
+  const { edges: hobbyImgData } = data.HobbyImgs;
+  return (
+    <div>
+      <Helmet>
+        <title>{siteTitle}</title>
+        <meta name="description" content={metaDescr} />
+        <link rel="icon" type="/image/png" href={favicon} />
+      </Helmet>
+      <Cover coverImg={data.coverImg} />
+      <div className="container-fluid main">
+        <Navigation />
+        <AboutMe profileImg={data.profileImg} hobbyImgs={hobbyImgData} />
+        <Projects projectImgs={projectImgData} />
+        <Contacts />
+        <Footer />
+      </div>
+    </div>
+  );
+};
 
-class IndexPage extends React.Component {
-  render() {
-    const siteTitle = "Wouter"
+export default HomePage;
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
-        <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
-        </p>
-        <p>Now go build something great!</p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link>
-      </Layout>
-    )
+export const query = graphql`
+  query allImgsQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+
+    coverImg: imageSharp(id: { regex: "/AirBalloon/" }) {
+      sizes(maxWidth: 1200) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+
+    profileImg: imageSharp(id: { regex: "/Maribel/" }) {
+      sizes(maxWidth: 420, maxHeight: 630) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+
+    ProjectImgs: allFile(
+      sort: { order: ASC, fields: [absolutePath] }
+      filter: { relativePath: { regex: "/projects/.*.png/" } }
+    ) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            sizes(maxWidth: 320) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+      }
+    }
+    HobbyImgs: allFile(
+      sort: { order: ASC, fields: [absolutePath] }
+      filter: { relativePath: { regex: "/icons/.*.png/" } }
+    ) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            sizes(maxWidth: 40) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+      }
+    }
   }
-}
-
-export default IndexPage
+`;
