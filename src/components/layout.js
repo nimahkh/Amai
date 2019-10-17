@@ -11,7 +11,7 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
-        <MenuBar
+        <h1
           style={{
             marginBottom: 0,
             textalign: 'center',
@@ -21,20 +21,19 @@ class Layout extends React.Component {
         >
           <Link
             style={{
-              marginBottom: 0,
-              textalign: 'center',
-              marginTop: 20,
-              marginRight: 20,
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
             }}
             to={location.pathname === blogPath ? `/blog/` : `/`}
           >
             {title}
           </Link>
-        </MenuBar>
+        </h1>
       )
     } else {
       header = (
-        <h1
+        <h3
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
@@ -50,7 +49,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h1>
+        </h3>
       )
     }
     return (
