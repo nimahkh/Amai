@@ -16,9 +16,7 @@ const HomePage = ({ data }) => {
         <link rel="icon" type="/image/png" href={favicon} />
       </Helmet>
       <Cover coverImg={data.coverImg} />
-      <div className="container-fluid main">
-        <Navigation />
-      </div>
+      <Navigation />
     </div>
   );
 };
