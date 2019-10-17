@@ -19,14 +19,9 @@ const Cover = ({ coverImg }) => (
     <div className="overlay" />
     <div className="center">
       <h1 className="name">
-        <b>HI, I'M MARIBEL</b>
+        <b>Wouter</b>
       </h1>
       <p className="greetings">Let's change the world together!</p>
-    </div>
-    <div className="arrow animated bounceInDown">
-      <Scrollchor to="#about" className="btn" animate={{ duration: 500 }}>
-        <i className="fa fa-chevron-down" />
-      </Scrollchor>
     </div>
   </div>
 );
