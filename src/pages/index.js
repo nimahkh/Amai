@@ -9,7 +9,8 @@ class IndexPage extends React.Component {
     const siteTitle = "Wouter"
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
+        <logo>location={this.props.location} title={siteTitle}</>
         <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
         <h1>
           Hey people{" "}

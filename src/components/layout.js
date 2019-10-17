@@ -11,6 +11,14 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
+        <logo
+        style={{
+          marginBottom: 0,
+          textalign: 'center',
+          marginTop: 20,
+          marginLeft: 20,
+        }}
+        >
         <h1
           style={{
             marginBottom: 0,
