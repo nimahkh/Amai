@@ -13,15 +13,12 @@ import "font-awesome/css/font-awesome.min.css";
 import "./index.css";
 
 const HomePage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title;
-  const metaDescr = data.site.siteMetadata.description;
   const { edges: projectImgData } = data.ProjectImgs;
   const { edges: hobbyImgData } = data.HobbyImgs;
   return (
     <div>
       <Helmet>
-        <title>{siteTitle}</title>
-        <meta name="description" content={metaDescr} />
+        <title>Wouter</title>
         <link rel="icon" type="/image/png" href={favicon} />
       </Helmet>
       <Cover coverImg={data.coverImg} />
@@ -40,12 +37,6 @@ export default HomePage;
 
 export const query = graphql`
   query allImgsQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
 
     coverImg: imageSharp(id: { regex: "/AirBalloon/" }) {
       sizes(maxWidth: 1200) {
