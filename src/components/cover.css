@@ -77,7 +77,7 @@
 }
 
 .overlay {
-  background-image: url("./images/AirBalloon.jpg");
+  background-image: url("../images/AirBalloon.jpg");
   background: #337ab7;
   position: absolute;
   margin: 0;
