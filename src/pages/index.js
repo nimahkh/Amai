@@ -9,8 +9,6 @@ import "font-awesome/css/font-awesome.min.css";
 import "./index.css";
 
 const HomePage = ({ data }) => {
-  const { edges: projectImgData } = data.ProjectImgs;
-  const { edges: hobbyImgData } = data.HobbyImgs;
   return (
     <div>
       <Helmet>
