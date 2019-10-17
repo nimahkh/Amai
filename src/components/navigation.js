@@ -79,7 +79,7 @@ class Navigation extends Component {
           >
             <NavItem onClick={this.handleCloseCollapse}>
               <ScrollchorItem to="#about" className="nav-link">
-                ABOUT ME
+                Over mij
               </ScrollchorItem>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
@@ -90,18 +90,8 @@ class Navigation extends Component {
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
               <ScrollchorItem to="#contact" className="nav-link">
-                CONTACT
+                Contact
               </ScrollchorItem>
-            </NavItem>
-            <NavItem onClick={this.handleCloseCollapse}>
-              <NavLink
-                href="https://medium.com/@maribelduran"
-                target="_blank"
-                className="external-link"
-                rel="noopener noreferrer"
-              >
-                WRITING
-              </NavLink>
             </NavItem>
           </Scrollspy>
         </Collapse>
