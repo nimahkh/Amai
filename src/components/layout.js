@@ -15,7 +15,8 @@ class Layout extends React.Component {
           style={{
             marginBottom: 0,
             textalign: 'center',
-            marginTop: 10,
+            marginTop: 20,
+            marginLeft: 20,
           }}
         >
           <Link
