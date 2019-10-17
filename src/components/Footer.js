@@ -1,26 +1,14 @@
-import React from 'react';
-import config from '../../config';
-export default function Footer() {
-  return (
-    <footer id="footer">
-      <ul className="icons">
-        {config.socialLinks.map(social => {
-          const { style, icon, name, url } = social;
-          return (
-            <li key={url}>
-              <a href={url} className={`icon ${style} ${icon}`}>
-                <span className="label">{name}</span>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-      <ul className="copyright">
-        <li>&copy; Spectral</li>
-        <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
-        </li>
-      </ul>
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const Footer = (props) => (
+    <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
+        <p className="copyright">&copy; Gatsby Starter - Dimension. Design: <a href="https://html5up.net">HTML5 UP</a>. Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a></p>
     </footer>
-  );
+)
+
+Footer.propTypes = {
+    timeout: PropTypes.bool
 }
+
+export default Footer
