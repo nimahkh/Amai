@@ -72,7 +72,7 @@ class Navigation extends Component {
         </NavbarToggler>
         <Collapse isOpen={this.state.isOpen} className={`${fontColor}`} navbar>
           <Scrollspy
-            items={["about", "projects", "contact"]}
+            items={["about", "blog", "contact"]}
             currentClassName="active"
             className={`${fontColor} ml-auto navbar-nav`}
             navbar
@@ -83,8 +83,8 @@ class Navigation extends Component {
               </ScrollchorItem>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
-              <ScrollchorItem to="#projects" className="nav-link">
-                PROJECTS
+              <ScrollchorItem to="/blog" className="nav-link">
+                Blog
               </ScrollchorItem>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
