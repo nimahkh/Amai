@@ -84,7 +84,7 @@ class Navigation extends Component {
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
             <NavLink
-              href="/blog">
+              href="/blog/">
                 Blog
               </NavLink>
             </NavItem>
