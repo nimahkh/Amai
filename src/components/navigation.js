@@ -64,8 +64,8 @@ class Navigation extends Component {
 
     return (
       <Navbar className={whiteBackground} fixed={"top"} expand="md">
-        <NavbarBrand href="https://www.maribelduran.com/" className={fontColor}>
-          MARIBEL DURAN
+        <NavbarBrand href="/" className={fontColor}>
+          Wouter
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar}>
           <i className={`fa fa-navicon ${fontColor}`} />
