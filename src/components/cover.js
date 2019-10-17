@@ -8,7 +8,6 @@ const Cover = ({ coverImg }) => (
     <Img
       title="Cover image"
       alt="Air Balloon in Nature"
-      sizes={coverImg.sizes}
       style={{
         position: "absolute",
         left: 0,
