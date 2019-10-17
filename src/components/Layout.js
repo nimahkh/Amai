@@ -25,37 +25,6 @@ const Layout = ({ children, location }) => {
     )
   }
 
-  export default ({ children }) => (
-    <StaticQuery
-      query={graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        keywords
-      }
-    }
-  }
-      `}
-      render={data=> (
-          <>
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                  { name: 'description', content: data.site.siteMetadata.description },
-                  { name: 'keywords', content: data.site.siteMetadata.keywords },
-              ]}
-              >
-              <link rel="stylesheet" type="text/css" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-            </Helmet>
-          {content}
-        </>
-      )}
-    />
-  )
-}
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
