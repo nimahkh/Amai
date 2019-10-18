@@ -10,6 +10,7 @@ const HomePage = ({ data }) => {
     <div>
       <Helmet>
         <title>Wouter</title>
+        <link rel="icon" type="/image/png" href={favicon} />
       </Helmet>
       <Cover coverImg={data.coverImg} />
     </div>
@@ -17,3 +18,53 @@ const HomePage = ({ data }) => {
 };
 
 export default HomePage;
+
+export const query = graphql`
+  query allImgsQuery {
+
+    coverImg: imageSharp(id: { regex: "/background" }) {
+      sizes(maxWidth: 1200) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+
+    profileImg: imageSharp(id: { regex: "/Maribel/" }) {
+      sizes(maxWidth: 420, maxHeight: 630) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+
+    ProjectImgs: allFile(
+      sort: { order: ASC, fields: [absolutePath] }
+      filter: { relativePath: { regex: "/projects/.*.png/" } }
+    ) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            sizes(maxWidth: 320) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+      }
+    }
+    HobbyImgs: allFile(
+      sort: { order: ASC, fields: [absolutePath] }
+      filter: { relativePath: { regex: "/icons/.*.png/" } }
+    ) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            sizes(maxWidth: 40) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+      }
+    }
+  }
+`;
