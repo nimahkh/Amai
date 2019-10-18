@@ -22,6 +22,7 @@ class Navigation extends Component {
         <NavbarToggler>
           <i className={`fa fa-navicon ${fontColor}`} />
         </NavbarToggler>
+        <Navbar>
             <NavItem>
               <ScrollchorItem to="#about" className="nav-link">
                 Over mij
@@ -37,8 +38,6 @@ class Navigation extends Component {
                 Contact
               </ScrollchorItem>
             </NavItem>
-          </Scrollspy>
-        </Collapse>
       </Navbar>
     );
   }
