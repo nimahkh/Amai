@@ -90,7 +90,7 @@ exports.createPages = async ({ graphql, actions }) => {
             const previousPagePath = prevPageNumber
                 ? prevPageNumber === 1
                     ? node.url
-                    : `${node.url}page/${prevPageNumber}/`
+                    : `${node.url}/blog/page/${prevPageNumber}/`
                 : null
             const nextPagePath = nextPageNumber
                 ? `${node.url}/blog/page/${nextPageNumber}/`
@@ -140,7 +140,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 : null
 
             createPage({
-                path: i === 0 ? node.url : `${node.url}page/${i + 1}/`,
+                path: i === 0 ? node.url : `${node.url}/blog/page/${i + 1}/`,
                 component: authorTemplate,
                 context: {
                     // Data passed to context is available
