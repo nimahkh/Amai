@@ -83,9 +83,8 @@ class Navigation extends Component {
               </ScrollchorItem>
             </NavItem>
             <NavItem>
-            <NavLink
-              href="/blog/">
-                Blog
+            <NavLink>
+                <a href="/blog/"> Blog</a>
               </NavLink>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
