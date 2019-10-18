@@ -6,8 +6,8 @@ import "./cover.css";
 const Cover = ({ coverImg }) => (
   <div id="#top" className="cover animated">
     <Img
-      title="Cover image"
-      alt="Air Balloon in Nature"
+      title="Background image"
+      alt="Gardens by the bay Singapore"
       style={{
         position: "absolute",
         left: 0,

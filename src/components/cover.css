@@ -77,7 +77,7 @@
 }
 
 .overlay {
-  background-image: url("../images/AirBalloon.jpg") !important;
+  background-image: url("../images/background.jpg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   overflow: hidden;
