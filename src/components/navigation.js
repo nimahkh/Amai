@@ -11,6 +11,7 @@ import {
 import ScrollchorItem from "./scrollchor-item";
 import Scrollspy from "react-scrollspy";
 import "./navigation.css";
+import { Link } from 'gatsby'
 
 class Navigation extends Component {
   constructor(props) {
@@ -83,9 +84,9 @@ class Navigation extends Component {
               </ScrollchorItem>
             </NavItem>
             <NavItem>
-            <NavLink href="/blog/">
+            <Link to="/blog/">
                 Blog
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
               <ScrollchorItem to="#contact" className="nav-link">
