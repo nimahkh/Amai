@@ -10,7 +10,6 @@ const HomePage = ({ data }) => {
     <div>
       <Helmet>
         <title>Wouter</title>
-        <link rel="icon" type="/image/png" href={favicon} />
       </Helmet>
       <Cover coverImg={data.coverImg} />
     </div>
