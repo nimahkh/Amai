@@ -14,11 +14,11 @@ class Navigation extends Component {
     const just = "just"
 
     return (
-      <Navbar fixed={"top"} expand="md">
+      <Navbar className={just} fixed={"top"} expand="md">
         <NavbarBrand href="/">
           Wouter
         </NavbarBrand>
-          <Nav className={just}>
+          <Nav>
             <NavItem>
                 Over mij
             </NavItem>
