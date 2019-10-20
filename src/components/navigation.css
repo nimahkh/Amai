@@ -9,11 +9,9 @@
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   border-bottom: none;
-}
-
-.just {
   justify-content: auto;
 }
+
 
 .navbar-border {
   border-bottom: 2px solid #cccccc !important;

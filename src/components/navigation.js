@@ -11,10 +11,9 @@ import { Link } from 'gatsby'
 class Navigation extends Component {
 
   render() {
-    const just = "just"
 
     return (
-      <Navbar className={just} fixed={"top"} expand="md">
+      <Navbar fixed={"top"} expand="md">
         <NavbarBrand href="/">
           Wouter
         </NavbarBrand>
