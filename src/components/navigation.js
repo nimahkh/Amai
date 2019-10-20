@@ -43,7 +43,6 @@ class Navigation extends Component {
               </ScrollchorItem>
             </NavItem>
           </Scrollspy>
-        </Collapse>
       </Navbar>
     );
   }
