@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from 'gatsby'
 import Cover from "../components/cover";
-import Menu from '../components/Menu'
+import navigation from '../components/navigation'
 import { Helmet } from "react-helmet";
 import favicon from "../static/logo/favicon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
