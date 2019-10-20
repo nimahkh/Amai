@@ -1,11 +1,4 @@
 import React, { Component } from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavLink,
-  Nav,
-  NavItem
-} from "reactstrap";
 import "./navigation.css";
 import { Link } from 'gatsby'
 
