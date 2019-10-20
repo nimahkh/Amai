@@ -29,7 +29,7 @@ class Navigation extends Component {
             <NavItem>
                 Contact
             </NavItem>
-          <Nav>
+          </Nav>
       </Navbar>
     );
   }
