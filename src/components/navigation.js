@@ -18,19 +18,15 @@ class Navigation extends Component {
         <NavbarBrand href="/">
           Wouter
         </NavbarBrand>
-        <NavItem>
-            <nav-link>
+            <NavItem>
                 Over mij
-            </nav-link>
-            <nav-link>
-            <Link to="/blog/">
+            </NavItem>
+            <NavItem href="/blog">
                 Blog
-              </Link>
-            </nav-link>
-            <nav-link>
+            </NavItem>
+            <NavItem>
                 Contact
-            </nav-link>
-          </NavItem>
+            </NavItem>
       </Navbar>
     );
   }
