@@ -15,6 +15,12 @@
   border-bottom: 2px solid #cccccc !important;
 }
 
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    justify-content: auto;
+  }
+}
+
 .white-background {
   background-color: white !important;
 }
