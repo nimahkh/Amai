@@ -7,9 +7,6 @@ import {
 } from "reactstrap";
 import "./navigation.css";
 import { Link } from 'gatsby'
-import styled from "styled-components"
-const Navbar = styled.section`
-  justify-content: auto;
 
 class Navigation extends Component {
 
