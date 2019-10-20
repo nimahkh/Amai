@@ -63,8 +63,8 @@ li.nav-item {
   color: white;
 }
 
-a.li.nav-item {
-    color: white;
+a {
+    color: white !important;
   }
 
 .nav-link {
