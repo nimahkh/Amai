@@ -53,6 +53,11 @@ ul.blue-font.navbar-nav > li > a {
   color: #337ab7;
 }
 
+.NavItem {
+  float: right;
+  list-style-type: none;
+}
+
 .nav-link {
   padding: 0 0;
   cursor: pointer;
