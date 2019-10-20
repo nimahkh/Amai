@@ -25,8 +25,10 @@ class Navigation extends Component {
             <NavItem>
                 Over mij
             </NavItem>
-            <NavItem Link to="/blog/">
+            <NavItem>
+            <Link to="/blog/">
                 Blog
+              </Link>
             </NavItem>
             <NavItem>
                 Contact
