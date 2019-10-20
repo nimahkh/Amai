@@ -15,10 +15,8 @@
   border-bottom: 2px solid #cccccc !important;
 }
 
-@media (min-width: 768px) {
-  .navbar-expand-md {
-    justify-content: auto !important;
-  }
+nav.navbar-expand-md.fixed-top {
+  justify-content: auto !important;
 }
 
 .white-background {
