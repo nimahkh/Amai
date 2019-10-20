@@ -17,6 +17,7 @@ class Navigation extends Component {
         <NavbarBrand href="/">
           Wouter
         </NavbarBrand>
+          <Nav>
             <NavItem>
                 Over mij
             </NavItem>
@@ -28,6 +29,7 @@ class Navigation extends Component {
             <NavItem>
                 Contact
             </NavItem>
+          <Nav>
       </Navbar>
     );
   }

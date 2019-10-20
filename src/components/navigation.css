@@ -56,7 +56,12 @@ ul.blue-font.navbar-nav > li > a {
 li.nav-item {
   list-style-type: none;
   padding-right: 20px;
+  color: white;
 }
+
+li.nav-item:active {
+    color: white;
+  }
 
 .nav-link {
   padding: 0 0;
