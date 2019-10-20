@@ -17,7 +17,7 @@ class Navigation extends Component {
         <NavbarBrand href="/">
           Wouter
         </NavbarBrand>
-          <Nav>
+          <Nav className={just}>
             <NavItem>
                 Over mij
             </NavItem>
