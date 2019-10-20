@@ -56,6 +56,7 @@ ul.blue-font.navbar-nav > li > a {
 li.nav-item {
   float: right;
   list-style-type: none;
+  padding-right: 20px;
 }
 
 .nav-link {
