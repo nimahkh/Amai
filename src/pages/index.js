@@ -11,7 +11,7 @@ const HomePage = ({ data }) => {
   return (
     <div>
       <Helmet>
-        <title>Wouter</title>
+        <title>Site</title>
         <link rel="icon" type="/image/png" href={favicon} />
       </Helmet>
       <Cover coverImg={data.coverImg} />
