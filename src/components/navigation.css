@@ -53,7 +53,7 @@ ul.blue-font.navbar-nav > li > a {
   color: #337ab7;
 }
 
-.NavItem {
+ul.NavItem {
   float: right;
   list-style-type: none;
 }
