@@ -54,7 +54,8 @@ ul.blue-font.navbar-nav > li > a {
 }
 
 .nav-link {
-  padding: 0 0;
+  float: right;
+  padding: 20 20;
   cursor: pointer;
 }
 
