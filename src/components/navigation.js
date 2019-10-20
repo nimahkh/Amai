@@ -13,7 +13,7 @@ class Navigation extends Component {
   render() {
 
     return (
-      <Navbar fixed={"top"} expand="md">
+      <Navbar fixed={"top"} expand="md" style="justify-content:auto;">
         <NavbarBrand href="/">
           Wouter
         </NavbarBrand>
