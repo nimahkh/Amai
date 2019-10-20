@@ -19,7 +19,7 @@ class Navigation extends Component {
 
     return (
       <Navbar fixed={"top"} expand="md">
-        <NavbarBrand href="/" className={fontColor}>
+        <NavbarBrand href="/">
           Wouter
         </NavbarBrand>
           <Scrollspy
