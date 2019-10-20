@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from 'gatsby'
 import Cover from "../components/cover";
-import Navigation from "../components/navigation";
+import Menu from '../components/Menu'
 import { Helmet } from "react-helmet";
 import favicon from "../static/logo/favicon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,7 +15,7 @@ const HomePage = ({ data }) => {
         <link rel="icon" type="/image/png" href={favicon} />
       </Helmet>
       <Cover coverImg={data.coverImg} />
-      <Navigation />
+      <Menu />
     </div>
   );
 };
