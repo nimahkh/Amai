@@ -22,27 +22,15 @@ class Navigation extends Component {
         <NavbarBrand href="/">
           Wouter
         </NavbarBrand>
-          <Scrollspy
-            items={["about", "blog", "contact"]}
-            currentClassName="active"
-            navbar
-          >
             <NavItem>
-              <ScrollchorItem to="#about" className="nav-link">
                 Over mij
-              </ScrollchorItem>
             </NavItem>
-            <NavItem>
-            <Link to="/blog/">
+            <NavItem Link to="/blog/">
                 Blog
-              </Link>
             </NavItem>
             <NavItem>
-              <ScrollchorItem to="#contact" className="nav-link">
                 Contact
-              </ScrollchorItem>
             </NavItem>
-          </Scrollspy>
       </Navbar>
     );
   }
