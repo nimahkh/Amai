@@ -33,6 +33,10 @@
   font-size: 25px !important;
 }
 
+a.navbar-brand {
+  color: white;
+}
+
 .navbar-brand:hover {
   color: #337ab7 !important;
 }
