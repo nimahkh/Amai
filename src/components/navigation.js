@@ -11,6 +11,7 @@ import { Link } from 'gatsby'
 class Navigation extends Component {
 
   render() {
+    const just = "just"
 
     return (
       <Navbar fixed={"top"} expand="md">
