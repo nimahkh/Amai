@@ -2,10 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Header = styled.header`
-  width: 100%;
-  padding: 1.5em 0;
-`
 const Nav = styled.nav`
   width: 100%;
   margin: 0 auto;
@@ -44,7 +40,6 @@ const activeLinkStyle = {
 
 const Menu = () => {
   return (
-    <Header>
       <Nav>
         <ul>
           <li>
@@ -64,7 +59,6 @@ const Menu = () => {
           </li>
         </ul>
       </Nav>
-    </Header>
   )
 }
 
