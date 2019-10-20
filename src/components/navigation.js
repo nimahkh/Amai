@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   NavLink,
   Nav,
   NavItem
 } from "reactstrap";
-import ScrollchorItem from "./scrollchor-item";
-import Scrollspy from "react-scrollspy";
 import "./navigation.css";
 import { Link } from 'gatsby'
 
