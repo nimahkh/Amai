@@ -19,7 +19,7 @@ const Cover = ({ coverImg }) => (
     <div className="overlay" />
     <div className="center">
       <h1 className="name">
-        <b>Wouter</b>
+        <b>Site</b>
       </h1>
       <p className="greetings">Let's change the world together!</p>
     </div>
