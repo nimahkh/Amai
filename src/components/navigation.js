@@ -3,7 +3,6 @@ import {
   Navbar,
   NavbarBrand,
   Nav,
-  NavItem
 } from "reactstrap";
 import "./navigation.css";
 import { Link } from 'gatsby'
