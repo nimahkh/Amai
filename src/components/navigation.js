@@ -18,21 +18,16 @@ class Navigation extends Component {
   render() {
 
     return (
-      <Navbar className={whiteBackground} fixed={"top"} expand="md">
+      <Navbar fixed={"top"} expand="md">
         <NavbarBrand href="/" className={fontColor}>
           Wouter
         </NavbarBrand>
-        <NavbarToggler onClick={this.toggleNavbar}>
-          <i className={`fa fa-navicon ${fontColor}`} />
-        </NavbarToggler>
-        <Collapse isOpen={this.state.isOpen} className={`${fontColor}`} navbar>
           <Scrollspy
             items={["about", "blog", "contact"]}
             currentClassName="active"
-            className={`${fontColor} ml-auto navbar-nav`}
             navbar
           >
-            <NavItem onClick={this.handleCloseCollapse}>
+            <NavItem>
               <ScrollchorItem to="#about" className="nav-link">
                 Over mij
               </ScrollchorItem>
@@ -42,7 +37,7 @@ class Navigation extends Component {
                 Blog
               </Link>
             </NavItem>
-            <NavItem onClick={this.handleCloseCollapse}>
+            <NavItem>
               <ScrollchorItem to="#contact" className="nav-link">
                 Contact
               </ScrollchorItem>
