@@ -63,7 +63,7 @@ li.nav-item {
   color: white;
 }
 
-li.nav-item:active {
+a.nav-item {
     color: white;
   }
 
