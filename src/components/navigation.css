@@ -45,22 +45,13 @@
   text-decoration: underline !important;
 }
 
-ul.white-font.navbar-nav > li > a {
-  color: white;
-}
-
-ul.blue-font.navbar-nav > li > a {
-  color: #337ab7;
+.NavItem {
+  float: right;
 }
 
 .nav-link {
-  float: right;
   padding: 20 20;
   cursor: pointer;
-}
-
-button:focus {
-  outline: none !important;
 }
 
 @media (min-width: 768px) {
