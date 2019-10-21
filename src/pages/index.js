@@ -25,7 +25,7 @@ export default HomePage;
 export const query = graphql`
   query allImgsQuery {
 
-    coverImg: imageSharp(id: { regex: "/background/" }) {
+    coverImg: imageSharp(original: { src: { regex: "/background/"} }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes
       }
