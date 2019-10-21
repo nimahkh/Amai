@@ -21,3 +21,14 @@ const HomePage = ({ data }) => {
 };
 
 export default HomePage;
+
+export const query = graphql`
+  query allImgsQuery {
+
+    coverImg: imageSharp(id: { regex: "/background/" }) {
+      sizes(maxWidth: 1200) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+`;
