@@ -30,6 +30,7 @@
 
 .navbar-brand {
   font-size: 25px !important;
+  margin-left: 4rem;
 }
 
 .navbar-brand:hover {
