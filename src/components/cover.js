@@ -2,7 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 import "./cover.css";
 
-const Cover => (
+const Cover = () => (
   <div id="#top" className="cover animated">
     <Img
       title="Background image"
