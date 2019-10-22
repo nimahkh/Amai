@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 const HomePage = () => (
-  return (
     <div>
       <Helmet>
         <title>Sitee</title>
@@ -18,6 +17,5 @@ const HomePage = () => (
       <Navigation />
     </div>
   );
-};
 
 export default HomePage;
