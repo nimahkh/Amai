@@ -69,7 +69,7 @@ class Navigation extends Component {
           Wouter
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar}>
-          <svg icon={["faBars"]} style={{color:"#ffffff"}} />
+          <FontAwesomeIcon icon={faBars} />
         </NavbarToggler>
         <Collapse isOpen={this.state.isOpen} className={`${fontColor}`} navbar>
           <Scrollspy
