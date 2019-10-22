@@ -7,7 +7,7 @@ import favicon from "../static/logo/favicon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
-const HomePage => {
+const HomePage = () => (
   return (
     <div>
       <Helmet>
