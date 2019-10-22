@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+  Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -7,9 +8,11 @@ import {
   Nav,
   NavItem
 } from "reactstrap";
+import ScrollchorItem from "./scrollchor-item";
+import Scrollspy from "react-scrollspy";
 import "./navigation.css";
 
-class Navi extends Component {
+class Navigation extends Component {
   constructor(props) {
     super(props);
 
@@ -62,16 +65,32 @@ class Navi extends Component {
     return (
       <Navbar className={whiteBackground} fixed={"top"} expand="md">
         <NavbarBrand href="https://www.maribelduran.com/" className={fontColor}>
-          Site
+          MARIBEL DURAN
         </NavbarBrand>
+        <NavbarToggler onClick={this.toggleNavbar}>
+          <i className={`fa fa-navicon ${fontColor}`} />
+        </NavbarToggler>
+        <Collapse isOpen={this.state.isOpen} className={`${fontColor}`} navbar>
+          <Scrollspy
+            items={["about", "projects", "contact"]}
+            currentClassName="active"
+            className={`${fontColor} ml-auto navbar-nav`}
+            navbar
+          >
             <NavItem onClick={this.handleCloseCollapse}>
+              <ScrollchorItem to="#about" className="nav-link">
                 ABOUT ME
+              </ScrollchorItem>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
+              <ScrollchorItem to="#projects" className="nav-link">
                 PROJECTS
+              </ScrollchorItem>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
+              <ScrollchorItem to="#contact" className="nav-link">
                 CONTACT
+              </ScrollchorItem>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
               <NavLink
@@ -83,9 +102,11 @@ class Navi extends Component {
                 WRITING
               </NavLink>
             </NavItem>
+          </Scrollspy>
+        </Collapse>
       </Navbar>
     );
   }
 }
 
-export default Navi;
+export default Navigation;
