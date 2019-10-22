@@ -36,6 +36,7 @@
     "eslint-plugin-react": "7.14.3"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "@tryghost/helpers": "1.1.10",
     "@tryghost/helpers-gatsby": "1.0.13",
     "bootstrap": "^4.3.1",
