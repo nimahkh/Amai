@@ -11,9 +11,13 @@ import { Link } from 'gatsby'
 class Navi extends Component {
 
   render() {
+      const whiteBackground = this.state.hasScrolledDown
+        ? "white-background navbar-border"
+          : "";
+      const fontColor = this.state.hasScrolledDown ? "blue-font" : "white-font";
 
     return (
-      <Navbar fixed={"top"} expand="md">
+      <Navbar className={whiteBackground} fixed={"top"} expand="md">
         <NavbarBrand href="/">
           Site
         </NavbarBrand>
