@@ -8,6 +8,8 @@ import {
   Nav,
   NavItem
 } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import ScrollchorItem from "./scrollchor-item";
 import Scrollspy from "react-scrollspy";
 import "./navigation.css";
