@@ -61,6 +61,10 @@ button:focus {
   outline: none !important;
 }
 
+.navbar-toggler {
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .navbar {
     margin-right: -20px;
