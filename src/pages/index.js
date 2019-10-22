@@ -7,28 +7,17 @@ import favicon from "../static/logo/favicon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
-const HomePage = ({ data }) => {
+const HomePage => {
   return (
     <div>
       <Helmet>
         <title>Sitee</title>
         <link rel="icon" type="/image/png" href={favicon} />
       </Helmet>
-      <Cover coverImg={data.coverImg} />
+      <Cover />
       <Navigation />
     </div>
   );
 };
 
 export default HomePage;
-
-export const query = graphql`
-  query allImgsQuery {
-
-    coverImg: imageSharp(id: { regex: "/background/" }) {
-      sizes(maxWidth: 1200) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-  }
-`;
