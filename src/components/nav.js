@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {
   Collapse,
   Navbar,
+  NavbarToggler,
   NavbarBrand,
   NavLink,
   Nav,
@@ -67,6 +68,9 @@ class Navigation extends Component {
         <NavbarBrand href="/" className={fontColor}>
           Wouter
         </NavbarBrand>
+        <NavbarToggler onClick={this.toggleNavbar}>
+          <FontAwesomeIcon icon={["faBars"]} style={{color:"#ffffff"}} />
+        </NavbarToggler>
         <Collapse isOpen={this.state.isOpen} className={`${fontColor}`} navbar>
           <Scrollspy
             items={["about", "projects", "contact"]}
