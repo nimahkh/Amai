@@ -64,8 +64,8 @@ class Navigation extends Component {
 
     return (
       <Navbar className={whiteBackground} fixed={"top"} expand="md">
-        <NavbarBrand href="https://www.maribelduran.com/" className={fontColor}>
-          MARIBEL DURAN
+        <NavbarBrand href="/" className={fontColor}>
+          Wouter
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar}>
           <i className={`fa fa-navicon ${fontColor}`} />
@@ -78,29 +78,14 @@ class Navigation extends Component {
             navbar
           >
             <NavItem onClick={this.handleCloseCollapse}>
-              <ScrollchorItem to="#about" className="nav-link">
-                ABOUT ME
-              </ScrollchorItem>
-            </NavItem>
-            <NavItem onClick={this.handleCloseCollapse}>
-              <ScrollchorItem to="#projects" className="nav-link">
-                PROJECTS
-              </ScrollchorItem>
+              <Link to="/blog" className="nav-link">
+                Blog
+              </Link>
             </NavItem>
             <NavItem onClick={this.handleCloseCollapse}>
               <ScrollchorItem to="#contact" className="nav-link">
-                CONTACT
+                Contact
               </ScrollchorItem>
-            </NavItem>
-            <NavItem onClick={this.handleCloseCollapse}>
-              <NavLink
-                href="https://medium.com/@maribelduran"
-                target="_blank"
-                className="external-link"
-                rel="noopener noreferrer"
-              >
-                WRITING
-              </NavLink>
             </NavItem>
           </Scrollspy>
         </Collapse>
