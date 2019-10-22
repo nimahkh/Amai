@@ -14,7 +14,7 @@ const HomePage = () => (
         <link rel="icon" type="/image/png" href={favicon} />
       </Helmet>
       <Cover />
-      <Navigation />
+      <Navi />
     </div>
   );
 
