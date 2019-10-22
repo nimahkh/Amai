@@ -3,18 +3,7 @@ import Img from "gatsby-image";
 import "./cover.css";
 
 const Cover = () => (
-  <div id="#top" className="cover animated">
-    <Img
-      title="Background image"
-      alt="Gardens by the bay Singapore"
-      style={{
-        position: "fixed",
-        left: 0,
-        top: 0,
-        width: "100%",
-        height: "100%"
-      }}
-    />
+  <div id="#top" className="cover">
     <div className="overlay" />
     <div className="center">
       <h1 className="name">
