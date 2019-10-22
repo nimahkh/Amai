@@ -35,10 +35,6 @@
   font-size: 25px !important;
 }
 
-a.navbar-brand {
-  color: white;
-}
-
 .navbar-brand:hover {
   color: #337ab7 !important;
 }
@@ -64,14 +60,6 @@ li.nav-item {
   padding-right: 20px;
   color: white;
 }
-
-a {
-    color: white !important;
-  }
-
-a:hover {
-    color: #808080 !important;
-  }
 
 .nav-link {
   padding: 0 0;
