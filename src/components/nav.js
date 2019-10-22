@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import ScrollchorItem from "./scrollchor-item";
 import Scrollspy from "react-scrollspy";
+import { FaBars } from 'react-icons/fa';
 import "./navigation.css";
 import { Link } from "gatsby"
 
@@ -69,7 +70,7 @@ class Navigation extends Component {
           Wouter
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar}>
-          <i className={`FaBars ${fontColor}`} />
+          <i className={<FaBars/> ${fontColor}`} />
         </NavbarToggler>
         <Collapse isOpen={this.state.isOpen} className={`${fontColor}`} navbar>
           <Scrollspy

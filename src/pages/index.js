@@ -5,7 +5,6 @@ import Navi from '../components/nav'
 import { Helmet } from "react-helmet";
 import favicon from "../static/logo/favicon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaBars } from 'react-icons/fa';
 import "./index.css";
 
 const HomePage = () => (
