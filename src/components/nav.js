@@ -8,7 +8,7 @@ import {
 import "./navigation.css";
 import { Link } from 'gatsby'
 
-class Navigation extends Component {
+class Navi extends Component {
 
   render() {
 
@@ -35,4 +35,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
+export default Navi;
