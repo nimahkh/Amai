@@ -1,10 +1,4 @@
 import React, { Component } from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem
-} from "reactstrap";
 import "./navigation.css";
 import { Link } from 'gatsby'
 
@@ -13,24 +7,21 @@ class Navi extends Component {
   render() {
 
     return (
-      <Navbar fixed={"top"} expand="md">
-        <NavbarBrand href="/">
-          Site
-        </NavbarBrand>
-          <Nav>
-            <NavItem>
-                Over mij
-            </NavItem>
-            <NavItem>
-            <Link to="/blog/">
-                Blog
-              </Link>
-            </NavItem>
-            <NavItem>
-                Contact
-            </NavItem>
-          </Nav>
-      </Navbar>
+      <nav id="navigation">
+        <a href="#" class="logo">Jan Czizikow</a>
+        <a aria-label="mobile menu" class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+          <ul class="menu-left">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="#exp">Resume</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
     );
   }
 }
