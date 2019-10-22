@@ -11,6 +11,7 @@ import {
 import ScrollchorItem from "./scrollchor-item";
 import Scrollspy from "react-scrollspy";
 import "./navigation.css";
+import { Link } from "gatsby"
 
 class Navigation extends Component {
   constructor(props) {
