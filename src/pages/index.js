@@ -21,7 +21,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="/images/background.jpg" alt="" />
+      						<img src="../images/background.jpg" alt="" />
       					</div>
       				</div>
       			</div>
