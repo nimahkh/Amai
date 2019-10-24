@@ -80,7 +80,7 @@ const HomePage = () => (
       	<div class="section padding-top-bottom over-hide z-bigger">
       		<ul class="slide-buttons">
       			<li class="">
-      				<a href="#" class="hover-target" data-hover="wouter">wouter</a>
+      				<a class="hover-target" data-hover="wouter">wouter</a>
       			</li>
       			<li class="">
       				<Link to="/blog" class="hover-target" data-hover="blog">blog</Link>
