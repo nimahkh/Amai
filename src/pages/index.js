@@ -4,6 +4,7 @@ import favicon from "../static/logo/favicon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import "./unicons.css";
+import { Link } from "gatsby"
 
 const HomePage = () => (
     <div>
