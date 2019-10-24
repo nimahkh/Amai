@@ -182,6 +182,6 @@ module.exports = {
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
-        `gatsby-plugin-remove-serviceworker`,
+        `gatsby-plugin-offline`,
     ],
 }
