@@ -40,10 +40,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         <div className="site-mast">
                             <div className="site-mast-left">
                                 <Link to="/index.html">
-                                    {site.logo ?
-                                        <img className="site-logo" src={site.logo} alt={site.title} />
-                                        : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
-                                    }
+                                  <img className="site-logo" src={site.logo} alt={site.title} />
                                 </Link>
                             </div>
                             <div className="site-mast-right">
