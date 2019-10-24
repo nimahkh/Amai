@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import favicon from "../static/logo/favicon.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
 import "./unicons.css";
 import { Link } from "gatsby"
@@ -10,8 +11,6 @@ const HomePage = () => (
       <Helmet>
       <title>Wouter</title>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' />
-      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css' />
-      <script  src="/script.js" />
       </Helmet>
 
       <body>
@@ -115,7 +114,9 @@ const HomePage = () => (
       	<div class='cursor' id="cursor"></div>
       	<div class='cursor2' id="cursor2"></div>
       	<div class='cursor3' id="cursor3"></div>
-        
+
+        <script  src="/script.js" />
+
       </body>
     </div>
   );
