@@ -39,12 +39,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <div className="container">
                         <div className="site-mast">
                             <div className="site-mast-left">
-                                <Link to="/index.html">
+                                <a href="/index.html">
                                     {site.logo ?
                                         <img className="site-logo" src={site.logo} alt={site.title} />
                                         : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                     }
-                                </Link>
+                                </a>
                             </div>
                             <div className="site-mast-right">
                                 { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
@@ -58,11 +58,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <p className="site-banner-desc">{site.description}</p>
                             </div> :
                             null}
-                        <nav className="site-nav">
-                            <div className="site-nav-right">
-                                <Link className="site-nav-button" to="/blog/about">About</Link>
-                            </div>
-                        </nav>
                     </div>
                 </header>
 
