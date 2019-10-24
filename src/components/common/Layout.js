@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-
-import { Navigation } from '.'
 import config from '../../utils/siteConfig'
 
 // Styles
@@ -38,11 +36,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
                     <div className="container">
                         <div className="site-mast">
-                          <Link to="/index.html">
                             <div className="site-mast-left">
-                                  <img className="site-logo" src={site.logo} alt={site.title} />
+                                <Link to="/index.html" target="_blank">
+                                        <img className="site-logo" src={site.logo} alt={site.title} />
+                                </Link>
                             </div>
-                            </Link>
                             <div className="site-mast-right">
                                 { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                                 { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
