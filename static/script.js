@@ -1,4 +1,4 @@
-(function($) { "use strict";
+(function($) { 
 
     document.getElementsByTagName("body")[0].addEventListener("mouseover", function(n) {
         t.style.left = n.clientX + "px",
