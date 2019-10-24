@@ -1,6 +1,6 @@
 (function($) { "use strict";
 
-    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+    document.getElementsByTagName("body")[0].addEventListener("mouseover", function(n) {
         t.style.left = n.clientX + "px",
 		t.style.top = n.clientY + "px",
 		e.style.left = n.clientX + "px",
