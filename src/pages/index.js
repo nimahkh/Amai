@@ -116,8 +116,8 @@ const HomePage = () => (
       	<div class='cursor2' id="cursor2"></div>
       	<div class='cursor3' id="cursor3"></div>
 
+        </body>
     </div>
-    </body>
   );
 
 export default HomePage;
