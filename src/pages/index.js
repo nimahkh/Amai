@@ -12,6 +12,11 @@ const HomePage = () => (
       <link rel="stylesheet" href="/style.css" />
       </Helmet>
 
+      <Helmet>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' />
+      <script  src="/script.js" />
+      </Helmet>
+
       <body>
       <div class="hero-center-section">
       		<div class="left-text">wouter</div>
@@ -98,11 +103,6 @@ const HomePage = () => (
       	<div class='cursor' id="cursor"></div>
       	<div class='cursor2' id="cursor2"></div>
       	<div class='cursor3' id="cursor3"></div>
-
-        <Helmet>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' />
-        <script  src="/script.js" />
-        </Helmet>
 
       </body>
     </div>
