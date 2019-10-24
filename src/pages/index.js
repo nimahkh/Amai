@@ -7,8 +7,6 @@ const HomePage = () => (
     <div>
       <Helmet>
       <title>Wouter</title>
-      <script  src="/script.js" />
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' />
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css' />
       <link rel='stylesheet' href='/unicons.css' />
       <link rel="stylesheet" href="/style.css" />
@@ -21,19 +19,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="../images/background.jpg" alt="" />
-      					</div>
-      				</div>
-      			</div>
-      		</div>
-      	</div>
-      	<div class="hero-center-section">
-      		<div class="left-text">travel</div>
-      		<div class="container">
-      			<div class="row justify-content-center">
-      				<div class="col-md-8">
-      					<div class="img-wrap">
-      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/travel.jpg" alt="" />
+      						<img src="/images/background.jpg" alt="" />
       					</div>
       				</div>
       			</div>
@@ -115,6 +101,9 @@ const HomePage = () => (
       	<div class='cursor' id="cursor"></div>
       	<div class='cursor2' id="cursor2"></div>
       	<div class='cursor3' id="cursor3"></div>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' />
+        <script  src="/script.js" />
 
       </body>
     </div>
