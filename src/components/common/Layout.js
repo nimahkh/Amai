@@ -37,7 +37,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <div className="container">
                         <div className="site-mast">
                             <div className="site-mast-left">
-                                <Link to="/index.html" target="_blank">
+                                <Link to="/">
                                         <img className="site-logo" src={site.logo} alt={site.title} />
                                 </Link>
                             </div>
