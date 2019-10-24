@@ -25,9 +25,6 @@
         t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
     }
 
-
-	//Switch light/dark
-
 	$(".switch").on('click', function () {
 		if ($("body").hasClass("light")) {
 			$("body").removeClass("light");
@@ -40,8 +37,6 @@
 	});
 
 	$(document).ready(function() {
-
-		/* Hero Case study images */
 
 		$('.slide-buttons li:nth-child(1)').on('mouseenter', function() {
 			$('.slide-buttons li.active').removeClass('active');
