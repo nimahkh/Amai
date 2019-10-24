@@ -1,28 +1,5 @@
 (function($) { "use strict";
 
-    var t = document.getElementById("cursor"),
-        e = document.getElementById("cursor2"),
-        i = document.getElementById("cursor3");
-
-    s();
-    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
-        o(r[a])
-    }
-    function o(t) {
-        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
-    }
-
-	$(".switch").on('click', function () {
-		if ($("body").hasClass("light")) {
-			$("body").removeClass("light");
-			$(".switch").removeClass("switched");
-		}
-		else {
-			$("body").addClass("light");
-			$(".switch").addClass("switched");
-		}
-	});
-
 	$(document).ready(function() {
 
 		$('.slide-buttons li:nth-child(1)').on('mouseenter', function() {
