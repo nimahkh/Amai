@@ -39,7 +39,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <div className="container">
                         <div className="site-mast">
                             <div className="site-mast-left">
-                                <a href="https://naughty-perlman-450468.netlify.com/">
+                                <a href="/index.html">
                                     {site.logo ?
                                         <img className="site-logo" src={site.logo} alt={site.title} />
                                         : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
