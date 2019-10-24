@@ -21,7 +21,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="../images/background.jpg" alt="" />
+      						<img src="./images/background.jpg" alt="" />
       					</div>
       				</div>
       			</div>
@@ -80,19 +80,19 @@ const HomePage = () => (
       	<div class="section padding-top-bottom over-hide z-bigger">
       		<ul class="slide-buttons">
       			<li class="">
-      				<a href="#0" class="hover-target" data-hover="wouter">wouter</a>
+      				<a href="#" class="hover-target" data-hover="wouter">wouter</a>
       			</li>
       			<li class="">
       				<Link to="/blog" class="hover-target" data-hover="blog">blog</Link>
       			</li>
       			<li class="">
-      				<a href="#0" class="hover-target" data-hover="animals">animals</a>
+      				<a href="#" class="hover-target" data-hover="animals">animals</a>
       			</li>
       			<li class="">
-      				<a href="#0" class="hover-target" data-hover="business">business</a>
+      				<a href="#" class="hover-target" data-hover="business">business</a>
       			</li>
       			<li class="">
-      				<a href="#0" class="hover-target" data-hover="art">art</a>
+      				<a href="#" class="hover-target" data-hover="art">art</a>
       			</li>
       		</ul>
       	</div>
