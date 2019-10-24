@@ -19,7 +19,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/nature.jpg" alt="">
+      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/nature.jpg" alt="" />
       					</div>
       				</div>
       			</div>
@@ -31,7 +31,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/travel.jpg" alt="">
+      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/travel.jpg" alt="" />
       					</div>
       				</div>
       			</div>
@@ -43,7 +43,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/fashion.jpg" alt="">
+      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/fashion.jpg" alt="" />
       					</div>
       				</div>
       			</div>
@@ -55,7 +55,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/animals.jpg" alt="">
+      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/animals.jpg" alt="" />
       					</div>
       				</div>
       			</div>
@@ -67,7 +67,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/business.jpg" alt="">
+      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/business.jpg" alt="" />
       					</div>
       				</div>
       			</div>
@@ -79,7 +79,7 @@ const HomePage = () => (
       			<div class="row justify-content-center">
       				<div class="col-md-8">
       					<div class="img-wrap">
-      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/art.jpg" alt="">
+      						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/art.jpg" alt="" />
       					</div>
       				</div>
       			</div>
