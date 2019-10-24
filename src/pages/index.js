@@ -14,6 +14,7 @@ const HomePage = () => (
       <script  src="/script.js" />
       </Helmet>
 
+      <body>
       <div class="hero-center-section">
       		<div class="left-text">nature</div>
       		<div class="container">
@@ -116,6 +117,7 @@ const HomePage = () => (
       	<div class='cursor3' id="cursor3"></div>
 
     </div>
+    </body>
   );
 
 export default HomePage;
