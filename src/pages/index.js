@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import "../styles/unicons.css"
 import $ from 'jquery';
 
-componentDidMount(){
+componentDidMount();
   if (typeof window !== `undefined`) {
   (function($) { "use strict";
     $(document).ready(function() {
@@ -51,7 +51,7 @@ componentDidMount(){
   	});
   })(jQuery);
   }
-};
+}
 
 const HomePage = () => (
     <div>
