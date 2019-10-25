@@ -64,7 +64,7 @@ const HomePage = () => (
       		</div>
       	</div>
       	<div class="hero-center-section">
-      		<div class="left-text">art</div>
+      		<div class="left-text">contact</div>
       		<div class="container">
       			<div class="row justify-content-center">
       				<div class="col-md-8">
@@ -91,7 +91,7 @@ const HomePage = () => (
       				<a href="#" class="hover-target" data-hover="business">business</a>
       			</li>
       			<li class="">
-      				<a href="#" class="hover-target" data-hover="art">art</a>
+      				<a href="#" class="hover-target" data-hover="contact">contact</a>
       			</li>
       		</ul>
       	</div>
