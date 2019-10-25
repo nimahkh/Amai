@@ -2,8 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import favicon from "../static/logo/favicon.png";
 import { Link } from "gatsby"
-import "./styles/style.css"
-import "./styles/unicons.css"
+import "../styles/style.css"
+import "../styles/unicons.css"
 
 const HomePage = () => (
     <div>
