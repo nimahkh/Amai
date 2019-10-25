@@ -51,7 +51,7 @@ componentDidMount(){
   	});
   })(jQuery);
   }
-}
+};
 
 const HomePage = () => (
     <div>
