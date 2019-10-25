@@ -1,3 +1,13 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--dark-grey: #151515;
+	--dark-light: #424455;
+	--red: #da2c4d;
+	--yellow: #f8ab37;
+	--grey: #ecedf3;
+}
+
 @font-face {
   font-family: 'unicons';
   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.eot');
@@ -32,13 +42,6 @@
 
 /* #original styles
 ================================================== */
-body{
-	width: 100%;
-	height: 100vh;
-	overflow-x: hidden;
-	-webkit-transition: all 300ms linear;
-	transition: all 300ms linear;
-}
 
 ::selection {
 	color: var(--white);
