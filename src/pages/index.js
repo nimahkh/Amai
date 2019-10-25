@@ -3,17 +3,29 @@ import { Helmet } from "react-helmet";
 import favicon from "../static/logo/favicon.png";
 import { Link } from "gatsby"
 import "../styles/unicons.css"
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    width: 100%;
+    height: 100vh;
+    background: #151515;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+  }
+`
 
 const HomePage = () => (
     <div>
       <Helmet>
+      <title>Wouter</title>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' />
       <script  src="/script.js" />
-      </Helmet>
-      <Helmet>
-      <title>Wouter</title>
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css' />
-      <link rel="stylesheet" href="/style.css" />
       </Helmet>
 
       <body>
