@@ -7,6 +7,7 @@ import $ from 'jquery';
 
 componentDidMount(){
   if (typeof window !== `undefined`) {
+  (function($) { "use strict";
     $(document).ready(function() {
 
   		$('.slide-buttons li:nth-child(1)').on('mouseenter', function() {
@@ -48,6 +49,7 @@ componentDidMount(){
   		$('.slide-buttons li:nth-child(1)').trigger('mouseenter')
 
   	});
+  })(jQuery);
   }
 }
 
