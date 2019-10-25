@@ -4,15 +4,16 @@ import favicon from "../static/logo/favicon.png";
 import { Link } from "gatsby"
 import "../styles/unicons.css"
 
-componentDidMount(){
-    const script=document.createElement('script')
-    script.src="/script.js"
-    script.async=true;
-    this.instance.appendChild(script)
+const HomePage = class extends React.Component () => (
 
-  }
+  componentDidMount(){
+      const script=document.createElement('script')
+      script.src="/script.js"
+      script.async=true;
+      this.instance.appendChild(script)
 
-const HomePage = () => (
+    };
+
     <div>
       <Helmet>
       <title>Wouter</title>
